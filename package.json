@@ -14,7 +14,8 @@
     "typescript": "^2.0.3"
   },
   "dependencies": {
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "protractor": "^4"
   },
   "licenses": [
     {
