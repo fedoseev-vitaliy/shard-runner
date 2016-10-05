@@ -1,6 +1,5 @@
 const childProcess = require("child_process");
 const path = require("path");
-require("core-js/shim");
 import {shardParser} from "./shard-parser";
 import {logger} from "./logger";
 let DEFAULT_PROTRACTOR_ARGS = [];
