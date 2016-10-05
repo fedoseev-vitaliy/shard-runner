@@ -11,7 +11,7 @@ delete argv["--"];
 
 import flake from "./lib/index";
 
-let shardRunner = new flake(argv, function (status) {
+export let shardRunner = new flake(argv, function (status) {
   process.exit(status);
 });
 
