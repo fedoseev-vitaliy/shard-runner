@@ -11,8 +11,8 @@ delete argv["--"];
 
 import flake from "./lib/index";
 
-let shardRerunner = new flake(argv, function (status) {
+let shardRunner = new flake(argv, function (status) {
   process.exit(status);
 });
 
-shardRerunner.startProtractor();
+shardRunner.startProtractor();
