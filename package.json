@@ -1,6 +1,6 @@
 {
   "name": "shard-runner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "reruner for protractor test using shard run",
   "main": "bin/shard-runner.js",
   "scripts": {

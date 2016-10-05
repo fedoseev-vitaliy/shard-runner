@@ -5,7 +5,7 @@ const shard_parser_1 = require("./shard-parser");
 const logger_1 = require("./logger");
 let DEFAULT_PROTRACTOR_ARGS = [];
 let DEFAULT_OPTIONS = {
-    maxAttempts: 3,
+    maxAttempts: 2,
     nodeBin: "node",
     "--": DEFAULT_PROTRACTOR_ARGS,
     protractorArgs: DEFAULT_PROTRACTOR_ARGS,
