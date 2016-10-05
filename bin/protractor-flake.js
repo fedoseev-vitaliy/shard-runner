@@ -8,7 +8,7 @@ const argv = require("minimist")(process.argv.slice(2), {
 });
 argv.protractorArgs = argv["--"];
 delete argv["--"];
-const index_1 = require("./dist/index");
+const index_1 = require("./lib/index");
 let shardRerunner = new index_1.default(argv, function (status) {
     process.exit(status);
 });
