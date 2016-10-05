@@ -1,0 +1,19 @@
+{
+  "name": "shard-runner",
+  "version": "1.0.0",
+  "description": "reruner for protractor test using shard run",
+  "main": "runner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vitalii fedosieiev",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^6.0.42",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}

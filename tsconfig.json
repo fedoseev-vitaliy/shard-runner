@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "outDir": "bin/"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

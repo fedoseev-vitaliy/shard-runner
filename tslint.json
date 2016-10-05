@@ -1,0 +1,16 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "member-access": false,
+    "max-line-length": 400,
+    "one-variable-per-declaration": false,
+    "forin": false,
+    "no-var-requires": false,
+    "no-trailing-whitespace": false,
+    "indent": [false, "tabs"],
+    "no-console": false,
+    "jsdoc-format": false,
+    "no-unused-expression": false,
+    "radix": false
+  }
+}
