@@ -4,8 +4,9 @@ const path = require("path");
 const shard_parser_1 = require("./shard-parser");
 const logger_1 = require("./logger");
 let DEFAULT_PROTRACTOR_ARGS = [];
+let oneFailSpec = [];
 let DEFAULT_OPTIONS = {
-    maxAttempts: 2,
+    maxAttempts: 3,
     nodeBin: "node",
     "--": DEFAULT_PROTRACTOR_ARGS,
     protractorArgs: DEFAULT_PROTRACTOR_ARGS,
@@ -27,6 +28,12 @@ class default_1 {
         else {
             if (++this.testAttempt <= this.parsedOptions.maxAttempts) {
                 let failedSpecs = shard_parser_1.shardParser(output);
+                if (failedSpecs.length === 1) {
+                    oneFailSpec.push(failedSpecs);
+                }
+                if (failedSpecs.length === 0) {
+                    failedSpecs = oneFailSpec;
+                }
                 logger_1.logger("info", "Re-running tests: test attempt " + this.testAttempt + "\n");
                 logger_1.logger("info", "Re-running the following test files:\n");
                 logger_1.logger("info", failedSpecs.join("\n") + "\n");
