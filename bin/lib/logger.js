@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var LOG_LEVELS;
 (function (LOG_LEVELS) {
     LOG_LEVELS[LOG_LEVELS["debug"] = 1] = "debug";

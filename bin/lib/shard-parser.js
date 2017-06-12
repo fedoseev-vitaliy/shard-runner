@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function shardParser(output) {
     const lineByLine = output.toString().split("\n");
     const failedFileIDs = lineByLine.filter((line) => {
@@ -14,7 +15,7 @@ function shardParser(output) {
         return line.match(new RegExp(filePath));
     }).filter((containPath) => {
         return failedFileIDs.filter((failedFileID) => {
-            return containPath.match(failedFileID);
+            return containPath.match(failedFileID + "\\D");
         }).length > 0;
     })
         .map((matchedLine) => {

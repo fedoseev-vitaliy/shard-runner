@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const childProcess = require("child_process");
 const path = require("path");
 const shard_parser_1 = require("./shard-parser");
@@ -74,6 +75,5 @@ class default_1 {
         });
     }
 }
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = default_1;
 ;
