@@ -81,7 +81,7 @@ export default class{
       output = output + text;
     });
 
-    protractor.on("exit", (status) => {
+    protractor.on("close", (status) => {
       this.handleTestEnd(status, output);
     });
   }
