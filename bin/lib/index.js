@@ -70,7 +70,7 @@ class default_1 {
             logger_1.logger("info", text);
             output = output + text;
         });
-        protractor.on("exit", (status) => {
+        protractor.on("close", (status) => {
             this.handleTestEnd(status, output);
         });
     }
